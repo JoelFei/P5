@@ -44,7 +44,7 @@ public class OrderActivity extends AppCompatActivity implements
         AdapterView.OnItemSelectedListener {
 
 
-    private CheckBox chocolateSyrup, sprinkles, crushedNuts,cherries,orio;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -114,27 +114,7 @@ public class OrderActivity extends AppCompatActivity implements
 
     }
 
-    public void onShowToastButtonClicked(View view) {
-        String message = "Toppings: ";
 
-        if(chocolateSyrup.isChecked())
-            message += getString(R.string.chocolateSyrup) + " ";
-
-        if(sprinkles.isChecked())
-            message += getString(R.string.sprinkles) + " ";
-
-        if(crushedNuts.isChecked())
-            message += getString(R.string.crushedNuts) + " ";
-
-        if(cherries.isChecked())
-            message += getString(R.string.cherries) + " ";
-
-        if(orio.isChecked())
-            message += getString(R.string.orioCookieCrumbles) + " ";
-
-        displayToast(message);
-
-    }
 
 
 
